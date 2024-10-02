@@ -27,7 +27,9 @@ response_schema = {
 def generate(theme: str):
     print("in generate here")
     response = model.generate_content(
-        f"List the 4 most important objects to tell a 5 year old to describe {theme} in one word, Do not to include human elements, Make Sure to use simple english words. Do not use words of emotions.",
+        # f"List the 4 most important objects to tell a 5 year old to describe {theme} in one word, Do not to include human elements, Make Sure to use simple english words. Do not use words of emotions.",
+        f"List the 6 most important objects to add to a banner {theme} in one word, Do not to include human elements, Make Sure to use simple english words. Do not use words of emotions.",
+
         generation_config=GenerationConfig(
             response_mime_type="application/json", response_schema=response_schema
         ),
