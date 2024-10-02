@@ -4,7 +4,7 @@ import vertexai
 from vertexai.generative_models import GenerationConfig, GenerativeModel
 import random
 
-PROJECT_ID = "gentle-nuance-433709-h1"  # @param {type:"string"}
+PROJECT_ID = "bb-hackathon-app"  # @param {type:"string"}
 LOCATION = "us-central1"  # @param {type:"string"}
 vertexai.init(project=PROJECT_ID, location=LOCATION)
 
